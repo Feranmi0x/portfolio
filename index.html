@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="FERANMI OMODARA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+    <title>MY PORTFOLIO</title>
+</head>
+
+   <section class="testimonials">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slide-img1">
+          <div class="info">
+            <div id="one"><span>Hey There! 
+              Welcome to <span class="iferf">iFERF</span> Digital Playground! </span>
+            </div>
+            <button class="explore">Discover</button>
+          </div>
+        </div>
+        <div class="swiper-slide slide-img2">
+          <div class="info">
+            <div id="one"><span>Creating Marketing Magic That Leaves a Lasting Impact!</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide-img3"><div class="info">
+            <div id="one">Join Me As I Explore The World, One City At a Time!
+            </div>
+          <button class="explore">Explore</button>
+          </div>
+        </div>
+        <div class="swiper-slide slide-img4"><div class="info">
+            <div id="one">Marketing Maven By Day , Adventure Ethusiast By Night!
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+    
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <header class="header">
+        <img class="header_img" src="./iferf.svg" alt="..">
+        <button class="toggle-icon" id="iconX">
+          <div id="toggle-icon1"></div>
+          <div id="toggle-icon2"></div>
+        </button>  
+    </header>
+     <nav>
+         <div class="nav_btn">
+            <img class="nav_img" src="./iferf.svg" alt=".">
+            <button class="nav-icon">
+            <div id="nav-icon1"></div>
+            <div id="nav-icon2"></div>
+            </button>
+         </div>
+         <ul>
+            <li><a href="iferf.html" class="iferf">iFERF</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a class="more_details" href="FAQ.html">FAQ</a></li>
+            <li><a class="more_details" href="team.html">Team</a></li>
+            <li><a class="more_details" href="terms-conditions.html">Terms & Conditions</a></li>
+            <li><a class="more_details" href="contact.html">Contact</a></li> 
+         </ul>
+         <article class="article_nav">
+          <ul>
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://x.com/0xgalilei?s=20" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+          </ul>
+         </article>
+     </nav>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+         delay: 6000,
+         disableOnInteraction: false,
+       },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
+    <body>
+</html>
